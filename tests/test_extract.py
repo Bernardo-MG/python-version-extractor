@@ -29,7 +29,7 @@ class TestExtractVersion(unittest.TestCase):
 
         This is the simples use case.
         """
-        version = extract_version('resources/__init__.py')
+        version = extract_version('tests/resources/__init__.py')
         self.assertEqual('1.2.3', version)
 
     def test_empty_file(self):
@@ -38,5 +38,5 @@ class TestExtractVersion(unittest.TestCase):
 
         This is the simples use case.
         """
-        version = extract_version('resources/empty.py')
+        version = extract_version('tests/resources/empty.py')
         self.assertFalse(version)
