@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from abc import ABCMeta, abstractmethod
+import ast
+import re
 
 """
 Placeholder classes.
@@ -11,6 +12,8 @@ Replace this module for the actual code.
 __author__ = 'Bernardo Martínez Garrido'
 __license__ = 'MIT'
 
+# Regular expression for the version
+_version_re = re.compile(r'__version__\s+=\s+(.*)')
 
 def extract_version(path):
     """
@@ -25,13 +28,35 @@ def extract_version(path):
     :return: the version inside the file
     """
 
-    # Regular expression for the version
-    _version_re = re.compile(r'__version__\s+=\s+(.*)')
+    with open(path, 'r', encoding='utf-8') as f:
+        version = f.read()
 
-    with open(path + '__init__.py', 'rb', encoding='utf-8') as f:
-        version_lib = f.read()
+    if version:
+        version = _version_re.search(version)
+        if version:
+            version = version.group(1)
+            version = str(ast.literal_eval(version.rstrip()))
+            extracted = version
+        else:
+            extracted = None
+    else:
+        extracted = None
 
-    version_lib = _version_re.search(version_lib).group(1)
-    version_lib = str(ast.literal_eval(version_lib.rstrip()))
+    return extracted
 
-    return version_lib
+
+def extract_version_init(folder):
+    """
+    Reads the __init__.py file inside the specified folder and returns the version
+    contained in it.
+
+    This is meant for reading the __init__.py file inside a package, and so it
+    expects a version field like:
+
+    __version__ = '1.0.0'
+
+    :param folder: folder containing the __init__.py file
+    :return: the version inside the file
+    """
+
+    return extract_version_init(folder + '__init__.py')
