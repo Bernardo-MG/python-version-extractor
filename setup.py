@@ -18,7 +18,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = 'bernardomg/version_extractor/'
+_source_package = 'version_extractor/'
 
 # Regular expression for the version
 _version_re = re.compile(r'__version__\s+=\s+(.*)')

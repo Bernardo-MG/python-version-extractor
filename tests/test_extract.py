@@ -2,7 +2,7 @@
 
 import unittest
 
-from bernardomg.version_extractor import extract_version
+from version_extractor import extract_version
 
 """
 Placeholder tests.
