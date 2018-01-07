@@ -22,5 +22,5 @@ Report       Description
 `Landscape`_ Code quality report
 ============ ===
 
-.. _Coveralls: https://coveralls.io/github/Bernardo-MG/bernardomg.version-extractor
-.. _Landscape: https://landscape.io/github/Bernardo-MG/bernardomg.version-extractor
+.. _Coveralls: https://coveralls.io/github/Bernardo-MG/python-version-extractor
+.. _Landscape: https://landscape.io/github/Bernardo-MG/python-version-extractor
