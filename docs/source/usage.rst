@@ -2,9 +2,25 @@
 Usage
 =====
 
-Describe here how to use the library with some general use examples.
+Just import and use the function::
 
-Any detailed topic should go into it's own section.
+    from version_extractor import extract_version
+
+    version = extract_version('tests/resources/__init__.py')
+
+Or use a preconfigured function::
+
+    from version_extractor import extract_version_init
+
+    version = extract_version_init('tests/resources')
+
+This is useful when setting up a setup.py file::
+
+    setup(
+        ...
+        version=extract_version_init(_source_package),
+        ...
+    )
 
 -------
 Testing

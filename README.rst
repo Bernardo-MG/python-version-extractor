@@ -1,16 +1,8 @@
-===============================
+=================
 Version extractor
-===============================
+=================
 
-This is a project created with the `Cookiecutter Python Library
-<https://github.com/Bernardo-MG/cookiecutter-python-library>`_ template and
-ready to be used for creating a new Python library.
-
-Just check the readme and docs, to adapt them to your project, and it is done.
-
-Remember that if you want to create a new project it is better just reusing
-the Cookiecutter Python Library template, as this will set up the initial
-project according to a few pieces of data it will ask for.
+A tool for extracting the version of a Python file.
 
 .. image:: https://badge.fury.io/py/bernardomg.version-extractor.svg
     :target: https://pypi.python.org/pypi/bernardomg.version-extractor
@@ -26,14 +18,7 @@ project according to a few pieces of data it will ask for.
 Features
 --------
 
-- Travis configuration file
-- Customized setup.py module to minimize configuration, and using tox for the tests
-- Docs using `Sphinx`_ and the `Sphinx Docs Theme <https://github.com/Bernardo-MG/sphinx-docs-theme>`_
-- Prepared to run tests through tox
-- Prepared to run tests on Python 2 and 3
-- Prepared to run tests on pypy and pypy 3
-- Prepared to run coverage tests and integrate with `Coveralls <https://coveralls.io>`_
-- Prepared to run tests for the `Sphinx`_ documentation
+- Extract the value from a version field inside any Python file
 
 Documentation
 -------------
@@ -79,8 +64,25 @@ If needed, manual installation is possible:
 Usage
 -----
 
-The application has been coded in Python, and does not require any particular
-framework.
+Just import and use the function::
+
+    from version_extractor import extract_version
+
+    version = extract_version('tests/resources/__init__.py')
+
+Or use a preconfigured function::
+
+    from version_extractor import extract_version_init
+
+    version = extract_version_init('tests/resources')
+
+This is useful when setting up a setup.py file::
+
+    setup(
+        ...
+        version=extract_version_init(_source_package),
+        ...
+    )
 
 Testing
 -------
