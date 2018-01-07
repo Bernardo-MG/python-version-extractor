@@ -18,7 +18,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = 'bernardomg.version-extractor/'
+_source_package = 'bernardomg/version_extractor/'
 
 # Regular expression for the version
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
@@ -44,7 +44,7 @@ with open(_source_package + '__init__.py', 'rb',
 
 
 setup(
-    name='bernardomg.version-extractor',
+    name='version_extractor',
     packages=find_packages(),
     include_package_data=True,
     package_data={
@@ -55,7 +55,7 @@ setup(
     author_email='programming@bernardomg.com',
     license='MIT',
     url='https://github.com/Bernardo-MG/python-version-extractor',
-    download_url='https://pypi.python.org/pypi/bernardomg.version-extractor',
+    download_url='https://pypi.python.org/pypi/version_extractor',
     keywords=[],
     platforms='any',
     classifiers=[

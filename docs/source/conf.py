@@ -20,7 +20,7 @@ _version_re = re.compile(r'__version__\s+=\s+(.*)')
 here = path.abspath(path.dirname(__file__))
 
 # Gets the version for the source folder __init__.py file
-with open('../../bernardomg.version-extractor/__init__.py', 'rb',
+with open('../../bernardomg/version_extractor/__init__.py', 'rb',
           encoding='utf-8') as f:
     version_lib = f.read()
     version_lib = _version_re.search(version_lib).group(1)
@@ -29,7 +29,7 @@ with open('../../bernardomg.version-extractor/__init__.py', 'rb',
 # -- Code location --------------------------------------------------------
 
 sys.path.append(os.path.abspath('../..'))
-sys.path.append(os.path.abspath('../../bernardomg.version-extractor'))
+sys.path.append(os.path.abspath('../../bernardomg/version_extractor'))
 
 
 # -- General configuration ------------------------------------------------
@@ -106,12 +106,12 @@ html_theme_options = {
     'scm_name': 'Github',
     'scm_url': 'https://github.com/Bernardo-MG/python-version-extractor',
     'ci_name': 'Travis',
-    'ci_url': 'https://travis-ci.org/Bernardo-MG/bernardomg.version-extractor',
+    'ci_url': 'https://travis-ci.org/Bernardo-MG/version_extractor',
     'issues_name': 'Github',
     'issues_url': 'https://github.com/Bernardo-MG/python-version-extractor/issues',
     'releases_repos': [
         ('Pypi',
-         'https://pypi.python.org/pypi/bernardomg.version-extractor')],
+         'https://pypi.python.org/pypi/version_extractor')],
     'general_info_links': [('Acquire', './acquire.html'),
                            ('Usage', './usage.html')],
     'navbar_links': [('Documentation', [('Acquire', './acquire.html'),
