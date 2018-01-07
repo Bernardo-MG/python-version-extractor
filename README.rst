@@ -17,10 +17,10 @@ project according to a few pieces of data it will ask for.
     :alt: Version extractor Pypi package page
 
 .. image:: https://img.shields.io/badge/docs-release-blue.svg
-    :target: http://docs.bernardomg.com/bernardomg.version-extractor
+    :target: http://docs.bernardomg.com/python-version-extractor
     :alt: Version extractor latest documentation Status
 .. image:: https://img.shields.io/badge/docs-develop-blue.svg
-    :target: http://docs.bernardomg.com/development/bernardomg.version-extractor
+    :target: http://docs.bernardomg.com/development/python-version-extractor
     :alt: Version extractor development documentation Status
 
 Features
@@ -122,8 +122,8 @@ License
 The project has been released under the `MIT License`_.
 
 .. _GitHub project page: https://github.com/Bernardo-MG/python-version-extractor
-.. _latest docs: http://docs.bernardomg.com/bernardomg.version-extractor
-.. _development docs: http://docs.bernardomg.com/development/bernardomg.version-extractor
+.. _latest docs: http://docs.bernardomg.com/python-version-extractor
+.. _development docs: http://docs.bernardomg.com/development/python-version-extractor
 .. _Pypi package: https://pypi.python.org/pypi/bernardomg.version-extractor
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _project issues tracker: https://github.com/Bernardo-MG/python-version-extractor/issues
