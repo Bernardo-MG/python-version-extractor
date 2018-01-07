@@ -44,7 +44,7 @@ with open(_source_package + '__init__.py', 'rb',
 
 
 setup(
-    name='version_extractor',
+    name='bernardomg.version_extractor',
     packages=find_packages(),
     include_package_data=True,
     package_data={
