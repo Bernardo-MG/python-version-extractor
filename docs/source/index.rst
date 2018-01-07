@@ -1,17 +1,14 @@
-===============================
+=================
 Version extractor
-===============================
+=================
 
-This is the documentation for a Python library. Change all the placeholder
-texts with actual information.
+A tool for extracting the version of a Python file.
 
 --------
 Features
 --------
 
-- A feature
-- Another feature
-- A third feature
+- Extract the value from a version field inside any Python file
 
 .. toctree::
    :hidden:
