@@ -29,5 +29,5 @@ class TestExtractVersion(unittest.TestCase):
 
         This is the simples use case.
         """
-        version = extract_version_init('tests/resources')
+        version = extract_version_init('tests/resources/')
         self.assertEqual('1.2.3', version)
