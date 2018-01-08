@@ -59,4 +59,4 @@ def extract_version_init(folder):
     :return: the version inside the file
     """
 
-    return extract_version_init(folder + '__init__.py')
+    return extract_version(folder + '__init__.py')
