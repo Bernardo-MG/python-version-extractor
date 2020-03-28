@@ -60,7 +60,7 @@ autodoc_member_order = 'groupwise'
 # General information about the project.
 project = 'Version extractor'
 project_safe = project.replace(' ', '_')
-copyright = u'2018, Bernardo Martínez Garrido'
+copyright = u'2018-2020, Bernardo Martínez Garrido'
 authors = [u'Bernardo Martínez Garrido']
 
 # The version info for the project.
