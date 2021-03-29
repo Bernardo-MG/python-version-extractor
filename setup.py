@@ -11,6 +11,7 @@ from setuptools import find_packages, setup
 import sys
 
 from setuptools.command.test import test as test_command
+from sphinx.setup_command import BuildDoc
 
 """
 PyPI configuration module.
@@ -112,5 +113,8 @@ setup(
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
-    cmdclass={'test': ToxTestCommand},
+    cmdclass={
+        'build_docs': BuildDoc,
+        'test': ToxTestCommand
+    },
 )
