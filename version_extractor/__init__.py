@@ -3,7 +3,7 @@
     Version extractor
     ~~~~~~~~~~~~~~~~~
     Extracts the version from a Python file
-    :copyright: (c) 2018-2020 by Bernardo Martínez Garrido
+    :copyright: (c) 2018-2021 by Bernardo Martínez Garrido
     :license: MIT, see LICENSE for more details.
 """
 
