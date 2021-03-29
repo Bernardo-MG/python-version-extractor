@@ -105,8 +105,8 @@ html_theme_options = {
     'years': datetime.datetime.now().year,
     'scm_name': 'Github',
     'scm_url': 'https://github.com/Bernardo-MG/python-version-extractor',
-    'ci_name': 'Travis',
-    'ci_url': 'https://travis-ci.org/Bernardo-MG/version_extractor',
+    'ci_name': 'Github',
+    'ci_url': 'https://github.com/Bernardo-MG/python-version-extractor/actions',
     'issues_name': 'Github',
     'issues_url': 'https://github.com/Bernardo-MG/python-version-extractor/issues',
     'releases_repos': [
