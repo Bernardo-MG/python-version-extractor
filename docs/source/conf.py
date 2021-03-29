@@ -60,7 +60,7 @@ autodoc_member_order = 'groupwise'
 # General information about the project.
 project = 'Version extractor'
 project_safe = project.replace(' ', '_')
-copyright = u'2018-2020, Bernardo Martínez Garrido'
+copyright = u'2018-2021, Bernardo Martínez Garrido'
 authors = [u'Bernardo Martínez Garrido']
 
 # The version info for the project.
@@ -116,8 +116,7 @@ html_theme_options = {
                            ('Usage', './usage.html')],
     'navbar_links': [('Documentation', [('Acquire', './acquire.html'),
                                         ('Usage', './usage.html')]),
-                     ('Info and Reports', [('Reports', './reports.html'),
-                                           ('Code docs', './code/index.html')])],
+                     ('Info and Reports', [('Code docs', './code/index.html')])],
 }
 
 # Output file base name for HTML help builder.
